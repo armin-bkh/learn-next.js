@@ -1,12 +1,13 @@
+import axios from "axios";
 import User from "../components/User/User";
 
 export const getStaticProps = async () => {
-  const users = await (
-    await fetch("https://jsonplaceholder.typicode.com/users")
-  ).json();
+  const { data } = await axios.get(
+    "https://jsonplaceholder.typicode.com/users"
+  );
   return {
     props: {
-      users,
+      users: data,
     },
   };
 };
