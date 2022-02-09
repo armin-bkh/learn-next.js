@@ -1,3 +1,5 @@
+import User from "../components/User/User";
+
 export const getStaticProps = async () => {
   const users = await (
     await fetch("https://jsonplaceholder.typicode.com/users")
@@ -15,10 +17,7 @@ const UsersList = ({ users }) => {
       <h1>users list</h1>
       <ul>
         {users.map((user) => (
-          <li key={user.id}>
-            <p>{user.name}</p>
-            <p>{user.email}</p>
-          </li>
+          <User key={user.id} user={user} />
         ))}
       </ul>
     </section>
