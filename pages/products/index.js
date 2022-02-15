@@ -1,15 +1,14 @@
 import Link from "next/link";
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:3001";
-
 export const getStaticProps = async () => {
-  const { data } = await axios.get("/products");
+  const { data } = await axios.get("http://localhost:3001/products");
 
   return {
     props: {
       products: data,
     },
+    revalidate: 10,
   };
 };
 
