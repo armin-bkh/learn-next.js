@@ -8,7 +8,7 @@ export const getStaticProps = async () => {
     props: {
       products: data,
     },
-    revalidate: 10,
+    revalidate: 30,
   };
 };
 
@@ -21,7 +21,7 @@ const ProductList = ({ products }) => {
           <li key={product.id}>
             <Link href={`/products/${product.id}`}>
               <a>
-                {product.id} {product.title}
+                {product.id} {product.title} {product.price}
               </a>
             </Link>
           </li>
