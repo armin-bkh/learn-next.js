@@ -25,7 +25,7 @@ const ArticleListByCategory = ({ articles, category }) => {
       <ul>
         {articles.map((article) => (
           <li key={article.id}>
-            <Link href={`/news/${article.id}`}>
+            <Link href={`/news/article/${article.id}`}>
               <div>
                 <h2>
                   {article.id} {article.title}

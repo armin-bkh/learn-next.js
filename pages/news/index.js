@@ -18,7 +18,7 @@ const NewsList = ({ articles }) => {
       <ul>
         {articles.map((article) => (
           <li key={article.id}>
-            <Link href={`/news/${article.id}`} passHref>
+            <Link href={`/news/article/${article.id}`} passHref>
               <h2>
                 {article.id} {article.title} {article.category}
               </h2>
