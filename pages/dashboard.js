@@ -19,10 +19,10 @@ const Dashboard = () => {
 
     return ( 
         <section>
-            <h2>{dashboardData.view}</h2>
-            <h2>{dashboardData.posts}</h2>
-            <h2>{dashboardData.followers}</h2>
-            <h2>{dashboardData.following}</h2>
+            <h2>my views - {dashboardData.view}</h2>
+            <h2>my posts - {dashboardData.posts}</h2>
+            <h2>my followers - {dashboardData.followers}</h2>
+            <h2>my following - {dashboardData.following}</h2>
         </section>
      );
 }
