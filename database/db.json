@@ -1,4 +1,10 @@
 {
+  "dashboard": {
+    "view": 115,
+    "posts": 22,
+    "followers": 112,
+    "following": 250
+  },
   "products": [
     {
       "id": 1,

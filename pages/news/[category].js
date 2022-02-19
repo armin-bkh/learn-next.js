@@ -5,7 +5,7 @@ export const getServerSideProps = async ({ params: { category }, req, res, query
     `http://localhost:3001/news?category=${category}`
   );
   const data = await response.json();
-  if (data.length === 0) {
+  if (!data.length) {
     return {
       notFound: true,
     };
