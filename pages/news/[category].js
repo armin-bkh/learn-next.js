@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export const getServerSideProps = async ({ params: { category } }) => {
+export const getServerSideProps = async ({ params: { category }, req, res, query }) => {
   const response = await fetch(
     `http://localhost:3001/news?category=${category}`
   );
