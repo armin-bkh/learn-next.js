@@ -1,4 +1,63 @@
 {
+  "events": [
+    {
+      "id": 1,
+      "title": "Event 1",
+      "description": "description Event 1",
+      "category": "politics",
+      "date": "2020"
+    },
+    {
+      "id": 2,
+      "title": "Event 2",
+      "description": "description Event 2",
+      "category": "politics",
+      "date": "2018"
+    },{
+      "id": 3,
+      "title": "Event 3",
+      "description": "description Event 3",
+      "category": "sports",
+      "date": "2020"
+    },{
+      "id": 4,
+      "title": "Event 4",
+      "description": "description Event 4",
+      "category": "technology",
+      "date": "2015"
+    },{
+      "id": 5,
+      "title": "Event 5",
+      "description": "description Event 5",
+      "category": "politics",
+      "date": "2020"
+    },{
+      "id": 6,
+      "title": "Event 6",
+      "description": "description Event 6",
+      "category": "sports",
+      "date": "2021"
+    },{
+      "id": 7,
+      "title": "Event 7",
+      "description": "description Event 7",
+      "category": "sports",
+      "date": "2012"
+    },{
+      "id": 8,
+      "title": "Event 8",
+      "description": "description Event 8",
+      "category": "technology",
+      "date": "2018"
+    },{
+      "id": 9,
+      "title": "Event 9",
+      "description": "description Event 9",
+      "category": "technology",
+      "date": "2020"
+    }
+  ]
+  ,
   "dashboard": {
     "view": 115,
     "posts": 22,
