@@ -1,4 +1,5 @@
 import axios from "axios";
+import Head from "next/head";
 import { useRouter } from "next/router";
 
 export const getStaticPaths = async () => {
@@ -41,12 +42,23 @@ const Post = ({ post }) => {
   }
 
   return (
-    <div>
-      <h1>
-        {post.id} {post.title}
-      </h1>
-      <p>{post.body}</p>
-    </div>
+    <>
+      <Head>
+        <title>
+          {post.id} {post.title}
+        </title>
+        <meta
+          name="description"
+          content={`post with id = ${post.id} and name = ${post.title}`}
+        />
+      </Head>
+      <div>
+        <h1>
+          {post.id} {post.title}
+        </h1>
+        <p>{post.body}</p>
+      </div>
+    </>
   );
 };
 
