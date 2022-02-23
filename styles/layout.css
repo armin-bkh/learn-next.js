@@ -1,0 +1,16 @@
+.header, .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gold;
+  background: darkgray;
+  padding: 20px;
+  font-size: 2rem;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
