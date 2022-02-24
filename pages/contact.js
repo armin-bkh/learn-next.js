@@ -1,4 +1,4 @@
-import Footer from "../components/Footer/Footer";
+import Footer from "../components/layout/Footer/Footer";
 
 const Contact = () => {
   return <main className="main">contact page</main>;
