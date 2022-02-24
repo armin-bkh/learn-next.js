@@ -12,9 +12,9 @@ export const getStaticProps = ({ preview }) => {
 const Contact = ({ data }) => {
   console.log(data);
   return <main className="main">contact page {data}
-  <Link href={{ pathname: "/api/disable-preview", query: {
+  {/* <Link href={{ pathname: "/api/disable-preview", query: {
     redirect: "/contact"
-  } }}><a>clear prview mode</a></Link>
+  } }}><a>clear prview mode</a></Link> */}
   </main>;
 };
 
