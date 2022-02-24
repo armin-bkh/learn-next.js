@@ -1,7 +1,15 @@
+import { useEffect } from 'react';
 import Head from "next/head";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function Home() {
+  const router = useRouter();
+  useEffect(() => {
+    router.push({ pathname: "/api/preview", query: {
+      redirect: "/contact"
+    } }); 
+  }, []);
   return (
     <>
       <Head>
